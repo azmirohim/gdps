@@ -1,0 +1,61 @@
+Yang diganti 
+1. resources->view->includes->header.blade.php line 71-78
+2. routes->web.php line 20, 30-31
+3. resources->view->page->vacancy.blade.php semua
+4. public->style.css line 1879-1888
+5. resources->views->includes->footer.blade.php line 28
+6. resources->view->page->internship.blade.php semua
+7. resources->view->includes->footer.blade.php line 28
+8. app->http->controllers->auth->register controllers line 31
+9. app->http->controllers->auth->verivication controllers line 28
+10. public->dist->css->AdminLTE.min.css line 2030-2033
+11. resources->views->adminPage->dashboard.blade.php line 9-26
+12. app->Http->Controllers->PostController.php line 58-74
+13. config->app.php line 176&226
+14. public->dist->css->AdminLTE.min.css mulai dari line 5807
+15. public->style.css ubah semua
+16. file env diganti semua
+17. file routes->web diganti semua
+18. config->auth
+19. app->http->redirectifauthenticated
+20. app->http->mail
+
+tips:
+A. (Done) search di admin harus dijadiin satu tabel-> tabel study dijadiin satu dengan form
+B. eksport excel
+	a. install package -> composer require maatwebsite/excel 
+	b. setelah copy di nomer 12
+	c. buat publisher -> php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider
+C. (DONE) di dalam database untuk e rekruitmen untuk pas foto pindah ke tabel file dan di setiap tabel file beri nama judul media masing-masing
+
+Setelah senin 27 Mei 
+- perbaiki database untuk e recruitment
+- coba duplikasi pembuatan tabel di form untuk data intern-> buat 2 tabel untuk intern 1 untuk data 1 untuk media
+- buat dashboard untuk intern, sesuaikan dengan form
+- buat database/template untuk membuat page vacancy
+- buat animasi untuk saat loading
+- (DONE) buat rename waktu send softcopy
+- buat download excel sesuai yg di search
+- buat parameter untuk tiap isi di form itu jobnya "decisioning" untuk yg aply dr vacancy "sesuai vacancy"
+- untuk vacancy buat seperti di asyst
+- (DONE) file excel dibuat ada title per colom
+- file excel untuk kolom nik dibuat number
+- buat pengisisan form recruit atau intern pop up dari vacancy
+
+untuk membuat vacancy :
+- buat list seperti di https://career.garuda-indonesia.com/home
+- setiap di clik akan muncul pop up seperti form tetapi isinya detail career yang di klik di bawah ada button untuk masuk ke login
+atau masuk ke page baru dan di dalam page isinya detail informasi lowongan dan form untuk regstrasi
+- registrasi berupa pop up->verifikasi email  
+- login juga berupa pop up
+- di dalam page vacancy akan ada link untuk register dan login, tiap di klik akan ada bentuk popup login maupun register
+- baut satu page baru untuk user-> setelah login 
+- isi page user di tanyakan nanti
+        
+REVISI 16 JULI
+- membuat export excel
+- membuat validasi agar tidak bisa aply di lowongan yang sama
+- membuat setiap nama yang aply beda lowongan maka id atau unik_id mempunyai nilai yang sama
+- loading page
+
+
