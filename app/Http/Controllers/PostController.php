@@ -182,8 +182,9 @@ class PostController extends Controller
 
      //COBA DENGAN PHP
      public function pdf(){
-        $pdf = DB::table('pdf_form')->get();
-        return view('adminPage.exportpdf',['pdf' =>$pdf]);
+        $pdfData = DB::table('pdf_form')->get();
+        $pdf = PDF::loadview('adminPage.exportpdf',['pdf' =>$pdfData]);
+        return $pdf->stream('laporan-pegawai-pdf.pdf');
     }
 
     // PDF ASLI
