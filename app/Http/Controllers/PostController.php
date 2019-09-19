@@ -18,7 +18,7 @@ use Carbon\Carbon;
 use App\Http\Requests\FileRequest;
 use App\Export\FormReport;
 use Maatwebsite\Excel\Facades\Excel;
-use Maatwebsite\Pdf\Facades\Pdf;
+use PDF;
 
 class PostController extends Controller
 {
